@@ -80,7 +80,7 @@ public class App
         List<SecondCache> resultList11 = session11.createQuery("from SecondCache", SecondCache.class).list();
         Query result1 = session11.createQuery("from SecondCache WHERE ID=1");
         result.setCacheable(true);
-        System.out.println("result of uique set:" +result1.uniqueResult());
+        System.out.println("result of uique set:" 		+result1.uniqueResult());
         for (SecondCache entity : resultList11) {
             System.out.println(entity);
         }

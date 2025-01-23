@@ -1,0 +1,4 @@
+<!ELEMENT hibernate-mapping (session-factory)>
+<!ELEMENT session-factory (property+)>
+<!ELEMENT property (#PCDATA)>
+<!ATTLIST property name ID #REQUIRED>
